@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CsharpZoo
 {
-    public class Eagle : Bird, Move
+    public class Eagle : Bird
     {
 
         int wingspan = 13;
@@ -23,5 +23,7 @@ namespace CsharpZoo
         {
             Console.WriteLine("Tip Tap");
         }
+
+
     }
 }

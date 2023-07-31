@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CsharpZoo
 {
     // This is a public abstract class named Bird that inherits from the Animal class.
-    public abstract class Bird : Animal
+    public abstract class Bird : Animal, iWalks
     {
         // This is an integer variable named WingSpan.
         int WingSpan;
@@ -23,5 +23,12 @@ namespace CsharpZoo
 
         // This is a public abstract void method named Fly that has no implementation.
         public abstract void Fly();
+
+        public override void Eat()
+        {
+            Console.WriteLine("MMMMMM, WORMS!");
+        }
+
+        public int legs { get; set; }
     }
 }

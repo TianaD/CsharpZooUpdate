@@ -16,9 +16,10 @@ namespace CsharpZoo
         public abstract string AnimalType { get; }
         public void DisplayType()
         {
-            Console.WriteLine($"This animal is a: {AnimalType}");
+            Console.WriteLine($"This is a: {AnimalType}");
         }
 
+        // public abstract void Move()
         public virtual void Move()
         {
             Console.WriteLine("move");

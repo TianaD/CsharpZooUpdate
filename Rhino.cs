@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CsharpZoo
 {
-    class Rhino : Mammal
+    class Rhino : Mammal, iWalks, Breathe
     {
+        public int legs { get; set; }
         public void Charge()
         {
             Console.WriteLine("Charrrgee!!!!");
@@ -18,10 +19,8 @@ namespace CsharpZoo
             Console.WriteLine("I eat leaves");
         }
 
-        public override void InhaleExhale()
-        {
-            Console.WriteLine("Breathe in; Breathe out");
-        }
+        public string InhaleExhale { get; set; }
+
 
         public override void Move()
         {

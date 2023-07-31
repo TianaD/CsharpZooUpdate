@@ -6,14 +6,19 @@ using System.Threading.Tasks;
 
 namespace CsharpZoo
 {
+    // abstract classes are meant to be inherited from not instantiated
     public abstract class Mammal : Animal
     {
         public string FurColor;
 
         public override string AnimalType => "Mammal";
-        public void DisplayType()
+
+
+        public string Breathe;
+
+        public override void Eat()
         {
-            Console.WriteLine($"This is a: {AnimalType}");
+            Console.WriteLine("What aaaaare you eating??");
         }
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpZoo
 {
-    public class Frog : Animal, InhaleExhale
+    public class Frog : Fish, iSwims
     {
         public Frog()
         {
@@ -28,5 +28,7 @@ namespace CsharpZoo
         {
             Console.WriteLine("Hop Hop . . . Hop");
         }
+
+        public bool inWater { get; set; }
     }
 }
