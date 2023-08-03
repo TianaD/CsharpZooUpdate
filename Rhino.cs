@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpZoo
 {
-    class Rhino : Mammal, iWalks, Breathe
+    class Rhino : Mammal, iWalks, // Breathe
     {
         public int legs { get; set; }
         public void Charge()
